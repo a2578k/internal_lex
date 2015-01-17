@@ -17,6 +17,7 @@
 @synthesize url_str;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
     NSLog(@"");
     UIBarButtonItem *close_btn =
     [[UIBarButtonItem alloc]
@@ -26,6 +27,7 @@
      action:@selector(closeAction)  // ボタンが押されたときに呼ばれるメソッドを指定
      ];
     self.navigationItem.rightBarButtonItem = close_btn;
+     */
     text_view.editable=NO;
     NSData *str_data=[NSData dataWithContentsOfURL:[NSURL URLWithString:url_str]];
     NSString *string = [[NSString alloc] initWithData:str_data encoding:NSUTF8StringEncoding];
